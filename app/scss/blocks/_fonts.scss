@@ -1,0 +1,24 @@
+@mixin font-face($fontFamily, $url, $fontName) {
+	@font-face {
+		font-family: $fontFamily;
+		src: url('#{$url}/#{$fontName}.woff') format('woff'),
+			 url('#{$url}/#{$fontName}.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+// SFProDisplay (ru)
+@include font-face('SF Pro Display-Regular', '../fonts', 'SFProDisplay-Regular');
+@include font-face('SF Pro Display-Medium', '../fonts', 'SFProDisplay-Medium');
+@include font-face('SF Pro Display-Semibold', '../fonts', 'SFProDisplay-Semibold');
+@include font-face('SF Pro Display-Bold', '../fonts', 'SFProDisplay-Bold');
+
+// Barlow (en)
+@include font-face('Barlow-Regular', '../fonts', 'Barlow-Regular');
+@include font-face('Barlow-Bold', '../fonts', 'Barlow-Bold');
+
+
+
+
+

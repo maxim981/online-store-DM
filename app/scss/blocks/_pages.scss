@@ -1,0 +1,35 @@
+.page-index {
+	&__header,
+	&__banner, 
+	&__search,
+	&__video,
+	&__products, 
+	&__banner-sale, 
+	&__catalog,
+	&__product-card
+	{
+		margin-bottom: 70px;
+	} 
+	&__categories {
+		margin-bottom: 40px;
+	}
+}
+.page-catalog {
+	&__catalog {
+		margin-bottom: 70px;
+	} 
+	&__video {
+		object-fit: contain;
+		border: 2px solid red;
+		height: 20px;
+	}
+}
+
+.page-product {
+	&__products,
+	&__product-card,
+	&__video 
+	{
+		margin-bottom: 70px;
+	}
+}

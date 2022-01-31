@@ -1,0 +1,46 @@
+.card-tabs {
+	&__tab-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 70px;
+		background: #F0F0F4;
+		overflow-x: scroll;
+		white-space: nowrap;
+		scrollbar-width: none;  //hide scroll for firefox
+		&::-webkit-scrollbar {	
+			display: none;
+		}
+	}
+	&__tab {
+		position: relative;
+		font-size: 18px;
+		opacity: 0.6;
+	}
+	&__tab.tab--active {
+		opacity: 1;
+	}
+	&__tab.tab--active::after {
+		position: absolute;
+		content: '';
+		height: 2px;
+		width: 100%;
+		background: #1C62CD;
+		left: 0;
+		bottom: -8px;
+	}
+	&__content {
+		display: none;
+	}
+	&__content:not(#pickup) {
+		text-align: center;
+		padding: 100px;
+		height: 100px;
+	}
+	&__content.tabs-content--active {
+		display: block;
+	}
+	&__pickup {
+		margin-bottom: 70px;
+	}
+}

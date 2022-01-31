@@ -1,0 +1,38 @@
+.mobile-menu {
+	overflow-y: scroll;
+	transition: .3s;
+	width: 243px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	background: white;
+	height: var(--height-mobile-menu);
+	scrollbar-width: none;  //hide scroll for firefox
+	&::-webkit-scrollbar {	
+		display: none;
+	}
+
+	&__item {
+	}
+	&__img {
+		padding-left: 10px;
+		position: absolute;
+	}
+	&__text {
+		margin-left: 53px;
+		padding-bottom: 6px;
+	}
+	&__link {
+		display: block;
+		padding-top: 46px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		padding-bottom: 4px;
+	}
+	&__link:hover {
+		background: #F0F0F4;
+	}
+}
+
+.mobile-menu--active {
+	transform: translateX(0);
+}
+
+

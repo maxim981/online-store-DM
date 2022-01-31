@@ -1,0 +1,50 @@
+@import 'blocks/null';
+@import 'blocks/fonts';
+@import 'blocks/variables';
+@import 'blocks/page-index';
+@import 'blocks/page-catalog';
+@import 'blocks/page-product';
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/search';
+@import 'blocks/categories';
+@import 'blocks/products';
+@import 'blocks/banner-sale';
+@import 'blocks/footer';
+@import 'blocks/catalog';
+@import 'blocks/product-card';
+@import 'blocks/breadcrumbs';
+@import 'blocks/video-banner';
+@import 'blocks/card-tabs';
+@import 'blocks/pickup';
+@import 'blocks/burger';
+@import 'blocks/mobile-menu';
+@import 'blocks/mobile-menu-line';
+
+
+
+body {
+	color: #2F3035;
+	font-family: 'SF Pro Display-Regular';
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 400;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
